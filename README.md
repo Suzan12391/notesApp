@@ -5,7 +5,7 @@ https://suzan12391.github.io/notesApp/
 
 
  
-i used Constructors function
+i used Constructors function and
 browser local storage
 
 
