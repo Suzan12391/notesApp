@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: #bcebf8;
+  }
+  
+  .header h1 h5 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #146C94;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ffffff;
+    color: #146C94;;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 100%;
+
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+
+ 
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: #cbdae0;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: inherit;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+    box-sizing: border-box;
+      text-overflow: ellipsis;
+    border: 3px #ff0000;
+  
+} 
+ #text{
+    width: 100%;
+    padding: auto;
+    margin: 1%;
+    resize: none;
+    height: 200px;
+    border: 2px solid #ccc;
+
+} 
+input{
+    width: 100%;
+    padding: auto;
+    margin: 1%;
+}
+#text,input:focus{
+    border: 3px solid #555;
+}
+#showNotes>h2,article{
+ 
+ text-align: center;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ letter-spacing: 1%;
+
+}
+sup{
+    font-size: 10px;
+  
+    text-align: end;
+    
+   
+  
+}
+#delet2{
+    margin-bottom:7%;
+}
+
+
+#showNotes>*{
+box-sizing: border-box;
+background-color: #116287;
+color: #f1f1f1;
+border-radius: 5%;
+text-align: center;
+align-items: center;
+text-overflow: ellipsis;
+display: inline-block;
+padding: 4%;
+margin: 3%;
+border: 3px #ff0000;
+letter-spacing: 0cap;
+} 
+
+
+/* add btn */
+
+.btn-add {
+    float: right;
+    --c:  #0eb5b8; /* the color*/
+    padding: 2%;
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  .btn-add:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  .btn-add:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
+
+  /* delte btn */
+.btn-delete{
+    float: right;
+    --c:  #f3a3a3; /* the color*/
+    color: #000000;
+   padding: 2%;
+    background-color: #cbdae0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  .btn-delete:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  .btn-delete:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+   
+  }
+
+.footer{
+    background-color: #055679;
+    color: #ffffff;
+  }
+  
+  
+  
+ 
+ 
+
+
+
+
